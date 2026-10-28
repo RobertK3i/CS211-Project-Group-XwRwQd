@@ -2,46 +2,43 @@ CS 211 Group Project — 2048 & Luhn Validation
 
 Project Overview
 
-This project consists of two separate C++ programs.
+For this project, we're making two separate programs in C++.
 
-  Part A — 2048 Game
-A console-based version of 2048 using a 5×5 array. The game will include directional movement, tile merging, scoring, and a save/load system.
-  
-  Part B — Luhn Validation
-A program that checks 16-digit numbers using the Luhn checksum algorithm. It will validate user input and determine whether a number passes the checksum.
+Part A — 2048 Game
+
+We're building a console version of 2048 using a 5×5 array. The game needs to handle moving and combining tiles, keeping score, and saving or loading a game.
+
+Part B — Luhn Validation
+
+This program will take a 16-digit number and check it using the Luhn algorithm. It will make sure the input is correct before checking whether the number passes.
 
 Group Members
 
-Member A: Robert Killough III — GitHub: RobertK3i
+- Member A: Robert K — GitHub: RobertK3i
+- Member B: Kaden M — GitHub: Kaden121
+- Member C: Trey J — GitHub: Regentaniken23
 
-Member B: — GitHub:
+Course Section: Monday/Wednesday
 
-Member C: — GitHub:
+Who's Doing What
 
-Course section: Monday/Wednesday
+We're splitting the six checkpoints between the three of us.
 
-Project Responsibilities
+- Member A: Initial repository setup and the 2048 save/load system (Checkpoints 1 and 4).
+- Member B: Left movement for 2048 and the Luhn program (Checkpoints 2 and 5).
+- Member C: Remaining 2048 movement, game controls, and final documentation/testing (Checkpoints 3 and 6).
 
-Member A: Repository setup and save/load implementation
+Even though we're splitting up the main work, everyone will still help test, review, and understand both programs.
 
-Member B: Left movement and Luhn validation
+Project Plan
 
-Member C: Remaining 2048 movement, game controls, and final documentation
+1. Set up GitHub, organize the project, and upload the starter code.
+2. Get left movement working correctly, including sliding and merging tiles.
+3. Finish the other movement directions, scoring, and game controls.
+4. Add the ability to save a game and load it later.
+5. Build the Luhn validator and test it with different inputs.
+6. Finish testing, clean up the documentation, and get everything ready to submit.
 
-All members will participate in testing, code reviews, and understanding both programs.
+Notes
 
-Development Plan
-
-Establish the repository and upload starter code.
-
-Implement and test left movement.
-
-Complete game movement, scoring, and controls.
-
-Implement save/load functionality.
-
-Develop and test Luhn validation.
-
-Complete documentation, testing, and final submission.
-
-All programs will use C++.
+Both programs will be written in C++. We'll use GitHub to track our changes and review each other's work before merging anything into the main branch.
