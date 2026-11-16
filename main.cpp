@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <string>
 #include "luhn.h"   
@@ -49,5 +47,5 @@ int main() {
         }
     }
 
-    return 0;   // 0 means the program ended normally
+    return 0;   
 }
