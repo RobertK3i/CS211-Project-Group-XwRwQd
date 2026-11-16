@@ -95,3 +95,6 @@ More details about contributions are in `contributions.md`.
 The 2048 game is console-based, so there's no graphical interface. Random tiles currently spawn as 2, and the save system only keeps one game at a time.
 
 Both programs are separate and can be compiled and run on their own.
+
+Issues experienced by group members with VS Code through the project. Creating difficulty with compiling code on VS. Onlinegdb was used as an alternative.
+
