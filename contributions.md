@@ -8,53 +8,48 @@
 
 CS 211 - Monday/Wednesday
 
-## How We Split Up the Project
+## Contributions
 
-We divided the project into six checkpoints, with each member taking responsibility for two.
+We originally divided the project into six checkpoints, with each member assigned two. Some work overlapped as we got further into the project to help spread scheduling load.
 
-**Robert - Checkpoints 1 and 4**
+**Robert Killough III**
 
-Handled the initial GitHub repository setup, project organization, and planning. Also worked on the 2048 save/load system so the game could save the board, score, and move count and load them again.
+Worked on the initial repository setup, organizing the project, and the 2048 save/load system. Also worked on getting the programs tested and the final documentation together.
 
-**Kaden - Checkpoints 2 and 5**
+Tested the 2048 game in OnlineGDB, including movement, merging, scoring, commands, and saving/loading. Also tested the Luhn program using the required inputs and recorded the results for `tests.md`.
 
-Worked on the left movement for the 2048 game, including sliding and merging tiles. Also worked on the Luhn validation program, including input checking, checksum calculations, and the main program.
+Worked on the README and final documentation for Checkpoint 6.
 
-**Trey - Checkpoints 3 and 6**
+**Kaden McKinley**
 
-Worked on the remaining 2048 movement directions, scoring, and game controls. Also handled final testing and documentation for the project.
+Worked on the 2048 left movement and Luhn validation program.
 
-## GitHub Work
+The Luhn program includes input format checking, calculating the checksum, and displaying whether the number passes or fails. It also allows multiple checks without restarting.
 
-We used GitHub branches and pull requests to work on different parts without editing everything directly on the main branch.
+**Trey Jones**
 
-| Checkpoint | Work | PR Link | Reviewed By | Merged By |
-|---|---|---|---|---|
-| 1 | Repository setup and project plan | [Add link] | [Add name] | [Add name] |
-| 2 | 2048 left movement | [Add link] | [Add name] | [Add name] |
-| 3 | Remaining 2048 gameplay | [Add link] | [Add name] | [Add name] |
-| 4 | Save and load | [Add link] | [Add name] | [Add name] |
-| 5 | Luhn validation | [Add link] | [Add name] | [Add name] |
-| 6 | Final testing and documentation | [Add link] | [Add name] | [Add name] |
+Assigned the remaining 2048 movement directions and game controls for Checkpoint 3, including moving up, down, and right, scoring, and gameplay functions.
+
+Checkpoint 6 was originally assigned to Trey as part of our group plan, with final testing and documentation also completed by Robert.
+
+## GitHub
+
+We used GitHub to keep the project files together and manage changes as the programs were developed.
+
+Checkpoint 6 has been merged. Not every checkpoint had its own pull request, so we haven't included links for work that wasn't submitted through a PR.
 
 ## Testing
 
 We tested both programs using OnlineGDB.
 
-For the 2048 game, we checked movement, merging, scoring, saving/loading, invalid commands, and exiting. We also recorded an actual gameplay run that reached a score of 120 after 23 successful moves.
+For 2048, we recorded a gameplay run reaching a score of 120 after 23 successful moves. We also checked the controls, merging, scoring, saving/loading, and basic game functions.
 
-For Luhn, we tested valid and invalid checksums, leading zeros, incorrect lengths, letters, spaces, and checking multiple numbers without restarting.
+For Luhn, all 8 required tests passed, including valid and invalid checksums, leading zeros, wrong input lengths, letters, spaces, and repeated inputs.
 
-Our recorded tests and results are in `tests.md`.
+The test results are recorded in `tests.md`.
 
-## Tools and Outside Help
+## Tools Used
 
-We used VS Code for writing C++ code, OnlineGDB for running tests, and GitHub for sharing and reviewing our work.
+We used VS Code for writing code, OnlineGDB for compiling and testing, and GitHub for keeping the project files organized.
 
-ChatGPT was also used for code explanations, troubleshooting, testing suggestions, and documentation help. We reviewed the code and checked the program results ourselves.
-
-## Final Notes
-
-We each had our own assigned checkpoints, but the final project includes work from all three members. We used testing and GitHub reviews to help make sure the separate parts worked together.
-
-The final README, test results, and report are included with the project files.
+ChatGPT was used for explanations, troubleshooting, test planning, and help organizing the documentation. The group checked the code and test results.
