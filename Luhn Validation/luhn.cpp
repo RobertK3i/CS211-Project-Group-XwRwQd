@@ -1,7 +1,17 @@
+// luhn.cpp
+// This file has the actual code for the functions listed in luhn.h.
+// There are three functions: one checks the format, one calculates the Luhn
+// sum, and one decides if the number passes.
+
 #include "luhn.h"
 using namespace std;
 
-// Checks that the input is allowed before vaildating
+// ---------------------------------------------------------------------------
+// isValidFormat
+// Checks that the input is allowed BEFORE we try to do any math with it.
+// The number is kept as a string (not an int) so that leading zeros are not
+// lost. For example 0000000000000018 would just become 18 as an int.
+// ---------------------------------------------------------------------------
 bool isValidFormat(string number) {
     // the number has to be exactly 16 characters long
     if (number.length() != 16) {
@@ -15,10 +25,13 @@ bool isValidFormat(string number) {
             return false;   // found a letter, space, or symbol
         }
     }
+
+    // passed both checks, so the format is fine
     return true;
 }
 
-
+// ---------------------------------------------------------------------------
+// luhnSum
 // Follows the Luhn steps:
 //   1. Start at the rightmost digit and move left.
 //   2. The rightmost digit stays the same. Every second digit after that
@@ -27,6 +40,7 @@ bool isValidFormat(string number) {
 //      together. This is the same as subtracting 9 (ex: 16 -> 1+6 = 7 = 16-9).
 //   4. Add up all of the digits, both the doubled and the unchanged ones.
 // The number is passed in by value (a copy), so the original is not changed.
+// ---------------------------------------------------------------------------
 int luhnSum(string number) {
     int sum = 0;        // running total of the transformed digits
     int position = 1;   // counts digits from the right. 1 = rightmost digit
@@ -55,7 +69,14 @@ int luhnSum(string number) {
 
     return sum;
 }
-// Checks if the Luhnsum is divisable by 10 with no remainder
+
+// ---------------------------------------------------------------------------
+// checkLuhn
+// The number passes if the Luhn sum divides evenly by 10, which means the
+// remainder (sum % 10) is 0.
+// Example: 4532015112830366 gives a sum of 50, and 50 % 10 = 0, so it passes.
+//          4532015112830367 gives a sum of 51, and 51 % 10 = 1, so it fails.
+// ---------------------------------------------------------------------------
 bool checkLuhn(string number) {
     int sum = luhnSum(number);
     return (sum % 10 == 0);
