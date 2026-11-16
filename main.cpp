@@ -1,17 +1,12 @@
-// main.cpp
-// The main program for the Luhn checksum checker.
-// It asks the user for a 16-digit number, checks the format, then checks the
-// Luhn checksum and prints the result. It keeps asking until the user quits.
-// NOTE: passing the Luhn check only means the digits are consistent. It does
-// NOT mean a real card exists or can be used for payment.
+
 
 #include <iostream>
 #include <string>
-#include "luhn.h"   // our own header, so main can use the Luhn functions
+#include "luhn.h"   
 using namespace std;
 
 int main() {
-    string number;   // what the user types (a string so leading zeros stay)
+    string number;   
 
     cout << "Luhn Checksum Checker" << endl;
     cout << "(this only checks the checksum, it does not prove a card is real)" << endl;
